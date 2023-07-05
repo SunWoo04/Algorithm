@@ -16,8 +16,7 @@ int main(){
 
 
 
-
-// [최재경] [오전 10:14] 1. 페어 사용하기
+// 1. 페어 사용하기
 // vector<pair<int,int>> v;
 // int a, b; cin >> a >> b;
 // v.push_back({a, b});
