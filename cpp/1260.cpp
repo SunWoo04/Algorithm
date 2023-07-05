@@ -41,6 +41,9 @@ int main(){
         graph[a].push_back(b);
         graph[b].push_back(a);
     }
+    for(int i=1;i<=vertex;i++){
+        sort(graph[i].begin(),graph[i].end());
+    }
     dfs(init);
     cout << '\n';
     bfs(init);
