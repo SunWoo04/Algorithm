@@ -1,34 +1,22 @@
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 int main(){
-    int N; cin >> N;
-    vector<int>v1;
-    for(int i=0;i<N;i++){
-        int temp; cin >> temp;
-        v1.push_back(temp);
-    }
+    ios_base::sync_with_stdio(0);
+    cout.tie(0); cin.tie(0);
 
-    int M; cin >> M;
-    vector<int>v2;
-    for(int i=0;i<M;i++){
+    int num; cin >> num;
+    unordered_map<int,bool>um;
+    for(int i=0;i<num;i++){
         int temp; cin >> temp;
-        v2.push_back(temp);
+        um[temp] = true;
     }
-
-    vector<int>answer;
-    for(int i=0;i<M;i++){
-        for(int j=0;j<N;j++){
-            if(v2[i] == v1[j]){
-                answer.push_back(1);
-                break;
-            }
+    int find; cin >> find;
+    for(int i=0;i<find;i++){
+        int temp; cin >> temp;
+        if (um.count(temp) == 1) { // if찾았다면
+            cout << 1 << '\n';
+        } else {
+            cout << 0 << '\n';
         }
-        if(answer.size() != i+1){
-            answer.push_back(0);
-        }
-    }
-    for(int i=0;i<answer.size();i++){
-        cout << answer[i] << '\n';
     }
 }
