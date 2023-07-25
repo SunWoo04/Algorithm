@@ -4,9 +4,7 @@ int main(){
     int repeat; cin >> repeat;
     int num; cin >> num;
     int arr[repeat];
-    for(int i=0;i<repeat;i++){
-        cin >> arr[i];
-    }
+    for(int i=0;i<repeat;i++)cin >> arr[i];
     int max=0;
     for(int i=0;i<repeat;i++){
         for(int j=0;j<repeat;j++){
