@@ -7,4 +7,3 @@ int main(){
         cout << str << '\n';
     }
 }
-
