@@ -2,6 +2,7 @@
 using namespace std;
 int main()
 {
+    // 빠른 입출력
     ios_base::sync_with_stdio(0);
     cout.tie(0);
     cin.tie(0);
